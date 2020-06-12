@@ -1,11 +1,23 @@
-var sentence = 'what a wonderful world';
-var arr = sentence.split('');
-console.log('arr', arr);
+function letterCapitalize(sentence) {
 
-for ( var i = 0; i < arr.length; i++) {
-    if (arr[i] === arr[i].toUpperCase()) {
-        console.log('enter the condition');
-        arr[i] = arr[i].toLowerCase();
+    var arr = sentence.split(' ');
+    console.log('arr', arr);
+
+    for ( var i = 0; i < arr.length; i++) {
+        var currentWord = arr[i];
+        var firstLetter = currentWord.substring(0, 1);
+        console.log('firstLetter', firstLetter);
+        firstLetter = firstLetter.toUpperCase();
+        var restWord = currentWord.substring(1);
+        console.log('restWord', restWord);
+        var fullWord = firstLetter + restWord;
+        console.log('fullWord', fullWord);
+        arr[i] = fullWord;
     }
+
+    var finalStr = arr.join(' ');
+    return finalStr;
+
 }
-console.log(arr.join(''));
+var result = letterCapitalize('what a wonderful wordl');
+console.log(result);
