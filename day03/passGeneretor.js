@@ -1,5 +1,5 @@
 function passGenerator(num) {
-    var arr = ['A','B','C','D','E','F','G','H','I'];
+    var arr = ['A','B','C','D','E','F','G','H','I','J','H','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
     var result = "";
 
     if (num < 6 || num > 15) {

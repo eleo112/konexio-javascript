@@ -6,7 +6,7 @@ function vowelCount(str) {
 
     for (var i = 0; i < arrVowels.lenght; i++) {
         for (var j = 0; j < arr.lenght; j++) {
-            if (arrVowels[i] === arr[j]) {
+            if (arrVowels[i] == arr[j]) {
                 var result = result++;
             }
         }
