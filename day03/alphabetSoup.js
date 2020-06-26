@@ -1,4 +1,11 @@
-var str = 'konexio';
-var sorted = str.sort();
+function alphabetSoup(str) {
+    // var str = 'konexio';
+    var arr = str.split("");
+    var sorted = arr.sort();
+    var result = sorted.join('');
 
-console.log(str);
+    return result;
+}
+
+console.log(alphabetSoup('konexio'));
+console.log(alphabetSoup('hooplah'));

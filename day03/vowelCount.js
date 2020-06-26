@@ -1,5 +1,5 @@
 function vowelCount(str) {
-    var str = str.toLowerCase();
+    // var str = str.toLowerCase();
     var arr = str.split('');
     var arrVowels = ['a', 'e', 'i', 'o', 'u', 'y'];
     var result = 0;

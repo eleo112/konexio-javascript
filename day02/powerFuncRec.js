@@ -1,5 +1,12 @@
 function powerFuncRec(num, power) {
-    console.log(num/power);
+    if (power === 0) {
+        return 1;
+    } else if (power > 0) {
+        return num * powerFuncRec(num, power - 1);
+    } else if (power < 0) {
+        return 1/num*powerFuncRec(num, power + 1);
+    }
+    
 };
 
-powerFuncRec(3,3);
+console.log(powerFuncRec(3,3));

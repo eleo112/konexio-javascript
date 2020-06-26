@@ -1,6 +1,14 @@
-for (var i = num; i > 0; i--) {
-    var var1 = i*i;
-    
+function squareRoot(num) {
+    // var num = 81;
+    var result = 0;
+
+    for (var i = num; i > 0; i--) {
+        var var1 = i*i;
+        result = num / var1;
+        }
+        
+    return result;
 }
 
-var num = 81;
+console.log(squareRoot(81));
+
